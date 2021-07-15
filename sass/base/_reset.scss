@@ -9,3 +9,8 @@ body {
   font-family: $ff-worksans;
   scroll-behavior: smooth;
 }
+
+.noscroll {
+  min-height: 100vh;
+  overflow: hidden;
+}

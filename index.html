@@ -36,7 +36,102 @@
     <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
-    <header class="header"></header>
+    <!-- BEGIN HEADER -->
+    <header class="header fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand m-0 p-0" href="#">I, Portfolio </a>
+          <button
+            id="headerToggler"
+            class="navbar-toggler border-0 text-white"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-times"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Portfolio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarBlogDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span>Blog</span>
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <div
+                  class="dropdown-menu text-center text-lg-left"
+                  aria-labelledby="navbarBlogDropdown"
+                >
+                  <a class="dropdown-item" href="#">Blog Posts</a>
+                  <a class="dropdown-item" href="#">Blog Single post</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarPagesDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span>Pages</span>
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <div
+                  class="dropdown-menu text-center text-lg-left"
+                  aria-labelledby="navbarPagesDropdown"
+                >
+                  <a class="dropdown-item" href="#">Landing page</a>
+                  <a class="dropdown-item" href="#">Contact</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar-tools d-flex align-items-center">
+            <a
+              class="
+                navbar-tools__sidebar
+                d-none d-lg-flex
+                flex-column
+                justify-content-between
+                align-items-end
+              "
+              href="#"
+            >
+              <div></div>
+              <div></div>
+              <div></div>
+            </a>
+            <a class="navbar-tools__darkmode d-inline-block" href="#">
+              <i class="moon d-block position-relative overflow-hidden"></i>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
     <section class="about"></section>
     <section class="services"></section>
     <section class="skills"></section>
@@ -62,5 +157,7 @@
       integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
