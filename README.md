@@ -4,6 +4,6 @@
 
 ## Techs
 
-- HTML5, CSS3
+- HTML5, CSS3, Javascript
 - Bootstrap v4.6.0
 - SASS

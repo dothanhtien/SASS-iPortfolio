@@ -1,6 +1,7 @@
 .header {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
   background-color: $c-6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
 
   .navbar {
     height: 90px;
@@ -26,12 +27,16 @@
 
     &-brand {
       font-size: $text-lg;
-      color: $c-1;
+      color: $c-0;
       font-weight: $fw-semibold;
 
       @media screen and (max-width: 1199.98px) {
         font-size: 1.75rem;
         line-height: 2.75rem;
+      }
+
+      &:hover {
+        color: $c-0;
       }
     }
 
@@ -241,6 +246,14 @@
 
   &.active {
     background-color: $c-5;
+  }
+}
+
+.header-placeholder {
+  height: 90px;
+
+  @media screen and (max-width: 991.98px) {
+    height: 75px;
   }
 }
 

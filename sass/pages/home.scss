@@ -3,3 +3,146 @@
 @import "../base/reset";
 @import "../base/customize";
 @import "../components/header";
+
+.about {
+  margin-top: 60px;
+
+  @media screen and (max-width: 1080px) {
+    margin-top: $sp-10;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    margin-top: $sp-5;
+  }
+
+  &__wrapper {
+    max-width: 900px;
+  }
+
+  &__info {
+    > span {
+      font-size: 1.25rem;
+      color: #f79784;
+      margin-bottom: 15px;
+
+      @media screen and (max-width: 567.98px) {
+        font-size: 1.125rem;
+        margin-bottom: 0.625rem;
+      }
+    }
+
+    h1 {
+      color: $c-0;
+      font-size: 2.8125rem;
+      font-weight: $fw-bold;
+      line-height: 1.4;
+      font-family: $ff-libre;
+
+      @media screen and (max-width: 1080px) {
+        font-size: 2.5rem;
+      }
+
+      @media screen and (max-width: 767.98px) {
+        font-size: 2.25rem;
+      }
+
+      @media screen and (max-width: 567.98px) {
+        font-size: 1.75rem;
+      }
+
+      .typewriter-wrapper {
+        &::after {
+          content: "";
+          height: 100%;
+          width: 2px;
+          background-color: $c-0;
+          position: absolute;
+          top: 0;
+          right: -5px;
+          animation: blink 0.5s none infinite alternate;
+        }
+
+        span.typewriter {
+          font-size: inherit;
+          min-height: 0.85em;
+          line-height: 0.85;
+          background-color: $c-4;
+          box-shadow: $c-4 0 0 0 5px;
+        }
+      }
+    }
+
+    p {
+      color: $c-1;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      font-family: $ff-system;
+    }
+  }
+
+  &__social {
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+
+    @media screen and (max-width: 991.98px) {
+      bottom: 2%;
+    }
+
+    @media screen and (max-width: 736.98px) {
+      position: static;
+      margin-top: 1.875rem;
+    }
+
+    .nav {
+      flex-direction: column;
+
+      @media screen and (max-width: 736.98px) {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      &-item {
+        margin-bottom: $sp-5;
+
+        @media screen and (max-width: 736.98px) {
+          margin-bottom: 0;
+          margin-right: $sp-6;
+        }
+
+        p {
+          color: $c-1;
+          font-size: 1.125rem;
+          font-family: $ff-system;
+          margin-bottom: 3.125rem;
+          transform: rotate(90deg);
+          letter-spacing: normal;
+
+          @media screen and (max-width: 736.98px) {
+            transform: rotate(0deg);
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &-link {
+        color: $c-0;
+        font-size: 1.125rem;
+        padding: 0;
+
+        &:hover {
+          color: $c-3;
+        }
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
